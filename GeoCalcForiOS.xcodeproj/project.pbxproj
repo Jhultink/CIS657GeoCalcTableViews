@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46C120AB931D00B03111 /* AppDelegate.swift */; };
+		599C46C420AB931D00B03111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46C320AB931D00B03111 /* ViewController.swift */; };
+		599C46C720AB931D00B03111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C46C520AB931D00B03111 /* Main.storyboard */; };
+		599C46C920AB932000B03111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599C46C820AB932000B03111 /* Assets.xcassets */; };
+		599C46CC20AB932000B03111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C46CA20AB932000B03111 /* LaunchScreen.storyboard */; };
+		599C46D720AB932000B03111 /* GeoCalcForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46D620AB932000B03111 /* GeoCalcForiOSTests.swift */; };
+		599C46E220AB932000B03111 /* GeoCalcForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46E120AB932000B03111 /* GeoCalcForiOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		599C46D320AB932000B03111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599C46B620AB931D00B03111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 599C46BD20AB931D00B03111;
+			remoteInfo = GeoCalcForiOS;
+		};
+		599C46DE20AB932000B03111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599C46B620AB931D00B03111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 599C46BD20AB931D00B03111;
+			remoteInfo = GeoCalcForiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		599C46BE20AB931D00B03111 /* GeoCalcForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCalcForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		599C46C120AB931D00B03111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		599C46C320AB931D00B03111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		599C46C620AB931D00B03111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		599C46C820AB932000B03111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		599C46CB20AB932000B03111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		599C46CD20AB932000B03111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599C46D220AB932000B03111 /* GeoCalcForiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCalcForiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599C46D620AB932000B03111 /* GeoCalcForiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcForiOSTests.swift; sourceTree = "<group>"; };
+		599C46D820AB932000B03111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599C46DD20AB932000B03111 /* GeoCalcForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCalcForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		599C46E120AB932000B03111 /* GeoCalcForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcForiOSUITests.swift; sourceTree = "<group>"; };
+		599C46E320AB932000B03111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		599C46BB20AB931D00B03111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46CF20AB932000B03111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46DA20AB932000B03111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		599C46B520AB931D00B03111 = {
+			isa = PBXGroup;
+			children = (
+				599C46C020AB931D00B03111 /* GeoCalcForiOS */,
+				599C46D520AB932000B03111 /* GeoCalcForiOSTests */,
+				599C46E020AB932000B03111 /* GeoCalcForiOSUITests */,
+				599C46BF20AB931D00B03111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		599C46BF20AB931D00B03111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				599C46BE20AB931D00B03111 /* GeoCalcForiOS.app */,
+				599C46D220AB932000B03111 /* GeoCalcForiOSTests.xctest */,
+				599C46DD20AB932000B03111 /* GeoCalcForiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		599C46C020AB931D00B03111 /* GeoCalcForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				599C46C120AB931D00B03111 /* AppDelegate.swift */,
+				599C46C320AB931D00B03111 /* ViewController.swift */,
+				599C46C520AB931D00B03111 /* Main.storyboard */,
+				599C46C820AB932000B03111 /* Assets.xcassets */,
+				599C46CA20AB932000B03111 /* LaunchScreen.storyboard */,
+				599C46CD20AB932000B03111 /* Info.plist */,
+			);
+			path = GeoCalcForiOS;
+			sourceTree = "<group>";
+		};
+		599C46D520AB932000B03111 /* GeoCalcForiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				599C46D620AB932000B03111 /* GeoCalcForiOSTests.swift */,
+				599C46D820AB932000B03111 /* Info.plist */,
+			);
+			path = GeoCalcForiOSTests;
+			sourceTree = "<group>";
+		};
+		599C46E020AB932000B03111 /* GeoCalcForiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				599C46E120AB932000B03111 /* GeoCalcForiOSUITests.swift */,
+				599C46E320AB932000B03111 /* Info.plist */,
+			);
+			path = GeoCalcForiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		599C46BD20AB931D00B03111 /* GeoCalcForiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599C46E620AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOS" */;
+			buildPhases = (
+				599C46BA20AB931D00B03111 /* Sources */,
+				599C46BB20AB931D00B03111 /* Frameworks */,
+				599C46BC20AB931D00B03111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoCalcForiOS;
+			productName = GeoCalcForiOS;
+			productReference = 599C46BE20AB931D00B03111 /* GeoCalcForiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		599C46D120AB932000B03111 /* GeoCalcForiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599C46E920AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOSTests" */;
+			buildPhases = (
+				599C46CE20AB932000B03111 /* Sources */,
+				599C46CF20AB932000B03111 /* Frameworks */,
+				599C46D020AB932000B03111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599C46D420AB932000B03111 /* PBXTargetDependency */,
+			);
+			name = GeoCalcForiOSTests;
+			productName = GeoCalcForiOSTests;
+			productReference = 599C46D220AB932000B03111 /* GeoCalcForiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		599C46DC20AB932000B03111 /* GeoCalcForiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 599C46EC20AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOSUITests" */;
+			buildPhases = (
+				599C46D920AB932000B03111 /* Sources */,
+				599C46DA20AB932000B03111 /* Frameworks */,
+				599C46DB20AB932000B03111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				599C46DF20AB932000B03111 /* PBXTargetDependency */,
+			);
+			name = GeoCalcForiOSUITests;
+			productName = GeoCalcForiOSUITests;
+			productReference = 599C46DD20AB932000B03111 /* GeoCalcForiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		599C46B620AB931D00B03111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Jaredt;
+				TargetAttributes = {
+					599C46BD20AB931D00B03111 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					599C46D120AB932000B03111 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 599C46BD20AB931D00B03111;
+					};
+					599C46DC20AB932000B03111 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 599C46BD20AB931D00B03111;
+					};
+				};
+			};
+			buildConfigurationList = 599C46B920AB931D00B03111 /* Build configuration list for PBXProject "GeoCalcForiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 599C46B520AB931D00B03111;
+			productRefGroup = 599C46BF20AB931D00B03111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				599C46BD20AB931D00B03111 /* GeoCalcForiOS */,
+				599C46D120AB932000B03111 /* GeoCalcForiOSTests */,
+				599C46DC20AB932000B03111 /* GeoCalcForiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		599C46BC20AB931D00B03111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599C46CC20AB932000B03111 /* LaunchScreen.storyboard in Resources */,
+				599C46C920AB932000B03111 /* Assets.xcassets in Resources */,
+				599C46C720AB931D00B03111 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46D020AB932000B03111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46DB20AB932000B03111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		599C46BA20AB931D00B03111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599C46C420AB931D00B03111 /* ViewController.swift in Sources */,
+				599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46CE20AB932000B03111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599C46D720AB932000B03111 /* GeoCalcForiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		599C46D920AB932000B03111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599C46E220AB932000B03111 /* GeoCalcForiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		599C46D420AB932000B03111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 599C46BD20AB931D00B03111 /* GeoCalcForiOS */;
+			targetProxy = 599C46D320AB932000B03111 /* PBXContainerItemProxy */;
+		};
+		599C46DF20AB932000B03111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 599C46BD20AB931D00B03111 /* GeoCalcForiOS */;
+			targetProxy = 599C46DE20AB932000B03111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		599C46C520AB931D00B03111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				599C46C620AB931D00B03111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		599C46CA20AB932000B03111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				599C46CB20AB932000B03111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		599C46E420AB932000B03111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		599C46E520AB932000B03111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		599C46E720AB932000B03111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		599C46E820AB932000B03111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		599C46EA20AB932000B03111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoCalcForiOS.app/GeoCalcForiOS";
+			};
+			name = Debug;
+		};
+		599C46EB20AB932000B03111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoCalcForiOS.app/GeoCalcForiOS";
+			};
+			name = Release;
+		};
+		599C46ED20AB932000B03111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoCalcForiOS;
+			};
+			name = Debug;
+		};
+		599C46EE20AB932000B03111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3HT3L7D47;
+				INFOPLIST_FILE = GeoCalcForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jaredtandjie.GeoCalcForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoCalcForiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		599C46B920AB931D00B03111 /* Build configuration list for PBXProject "GeoCalcForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599C46E420AB932000B03111 /* Debug */,
+				599C46E520AB932000B03111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599C46E620AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599C46E720AB932000B03111 /* Debug */,
+				599C46E820AB932000B03111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599C46E920AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599C46EA20AB932000B03111 /* Debug */,
+				599C46EB20AB932000B03111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		599C46EC20AB932000B03111 /* Build configuration list for PBXNativeTarget "GeoCalcForiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				599C46ED20AB932000B03111 /* Debug */,
+				599C46EE20AB932000B03111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 599C46B620AB931D00B03111 /* Project object */;
+}
