@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		599802A020ABB56600C92630 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5998029F20ABB56600C92630 /* SettingViewController.swift */; };
+		599802A220ABBEB700C92630 /* BearingPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599802A120ABBEB700C92630 /* BearingPickerView.swift */; };
 		599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46C120AB931D00B03111 /* AppDelegate.swift */; };
 		599C46C420AB931D00B03111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46C320AB931D00B03111 /* ViewController.swift */; };
 		599C46C720AB931D00B03111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599C46C520AB931D00B03111 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		5998029F20ABB56600C92630 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		599802A120ABBEB700C92630 /* BearingPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearingPickerView.swift; sourceTree = "<group>"; };
 		599C46BE20AB931D00B03111 /* GeoCalcForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCalcForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599C46C120AB931D00B03111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		599C46C320AB931D00B03111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				599C46C820AB932000B03111 /* Assets.xcassets */,
 				599C46CA20AB932000B03111 /* LaunchScreen.storyboard */,
 				599C46CD20AB932000B03111 /* Info.plist */,
+				599802A120ABBEB700C92630 /* BearingPickerView.swift */,
 			);
 			path = GeoCalcForiOS;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				599C46F020AB99D500B03111 /* DecimalMinusTextField.swift in Sources */,
 				599C46C420AB931D00B03111 /* ViewController.swift in Sources */,
 				599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */,
+				599802A220ABBEB700C92630 /* BearingPickerView.swift in Sources */,
 				599802A020ABB56600C92630 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
