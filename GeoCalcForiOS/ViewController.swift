@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GeoCalcForiOS
 //
-//  Created by BDO on 5/15/18.
+//  Created by Jaredt Hultink and Jie Tao on 5/15/18.
 //  Copyright © 2018 Jaredt. All rights reserved.
 //
 
