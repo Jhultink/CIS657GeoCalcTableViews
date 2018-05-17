@@ -19,11 +19,16 @@ class SettingViewController: UIViewController {
     
     var selectedLabel: UILabel! = nil;
     
-    var bearingUnits = ["Degrees", "Mils"]
-    var distanceUnits = ["Kilometers", "Miles"]
+    let distanceUnits = ["Kilometers", "Miles"]
+    let bearingUnits = ["Degrees", "Mils"]
+    
+    var selectedDistance:String?
+    var selectedBearing:String?
     
     var currentPickerList:[String] = [String]();
-    var selection: String = ""
+    //var selection: String = ""
+    
+    var delegate : SettingsViewControllerDelegate?
     
     @IBOutlet weak var picker: UIPickerView!
     
@@ -31,8 +36,18 @@ class SettingViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func savedPressed(_ sender: Any) {
+        if let d = self.delegate {
+            d.settingsChanged(distanceUnits: self.selectedDistance!, bearingUnits: self.selectedBearing!)
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedDistance = self.distanceUnits[0]
+        self.selectedBearing = self.bearingUnits[0]
         
         // Distance label tapped
         let distanceTapped = UITapGestureRecognizer(target: self, action: #selector(distanceLabelTapped))
@@ -61,16 +76,16 @@ class SettingViewController: UIViewController {
         picker.isHidden = false;
         picker.dataSource = self;
         
-        picker.selectRow(currentPickerList.index(of: selectedLabel.text!)!, inComponent: 0, animated: true)
+        picker.selectRow(currentPickerList.index(of: self.selectedDistance!)!, inComponent: 0, animated: true)
     }
     
     @objc func bearingLabelTapped() {
         self.selectedLabel = self.bearingLabel;
         self.currentPickerList = self.bearingUnits;
         picker.isHidden = false;
-        picker.dataSource = self;
+        picker.dataSource = self
         
-        picker.selectRow(currentPickerList.index(of: selectedLabel.text!)!, inComponent: 0, animated: true)
+        picker.selectRow(currentPickerList.index(of: self.selectedBearing!)!, inComponent: 0, animated: true)
     }
     
     @objc func hidePicker() {
@@ -99,5 +114,11 @@ extension SettingViewController : UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         self.selectedLabel.text = self.currentPickerList[row]
+        
+        if self.selectedLabel == self.bearingLabel {
+            self.selectedBearing = self.currentPickerList[row]
+        } else {
+            self.selectedDistance = self.currentPickerList[row]
+        }
     }
 }
