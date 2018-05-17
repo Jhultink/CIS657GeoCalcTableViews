@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 
-class ViewController: UIViewController, SettingsViewControllerDelegate{
+class ViewController: UIViewController {
 
     
     @IBOutlet weak var latitudeP1: DecimalMinusTextField!
@@ -50,13 +50,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate{
         let distanceInMeters = p1.distance(from: p2)
         print(distanceInMeters)
         
-        // swith unit
-        if setting["distance"]! == "Kilometers"  {
-            distanceLabel.text = "Distance: " + String(format: "%.2f", distanceInMeters / 1000)
-        }
-        else{
-             distanceLabel.text = "Distance: " + String(format: "%.2f", distanceInMeters * 0.621371 / 1000)
-        }
+        distanceLabel.text = "Distance: " + String(format: "%.2f", distanceInMeters / 1000)
         
         bearingLabel.text = "Bearing: " + String(format: "%.2f", RadiansToDegrees(radians: Double(getBearing(fromLoc: p2, toLoc: p1))))
     }
@@ -73,7 +67,6 @@ class ViewController: UIViewController, SettingsViewControllerDelegate{
         
         let detectTouch = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(detectTouch)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -105,6 +98,5 @@ class ViewController: UIViewController, SettingsViewControllerDelegate{
         
         return atan2(a,b)
     }
-
 }
 
