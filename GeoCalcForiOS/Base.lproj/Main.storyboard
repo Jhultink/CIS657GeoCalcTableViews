@@ -151,6 +151,11 @@
                                 <action selector="cancelPressed:" destination="5WS-50-XVC" id="kfq-Jn-qZr"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="LyZ-db-emB">
+                            <connections>
+                                <action selector="savePressed:" destination="5WS-50-XVC" id="riM-2V-fGL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bearingLabel" destination="iDF-TK-jwc" id="MQI-PR-74o"/>
@@ -160,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5PX-W7-ldq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381.60000000000002" y="-886.50674662668678"/>
+            <point key="canvasLocation" x="430" y="-1266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NXD-xE-hLL">
@@ -178,7 +183,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jc-TZ-eUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="-885"/>
+            <point key="canvasLocation" x="-330" y="-362"/>
         </scene>
     </scenes>
 </document>

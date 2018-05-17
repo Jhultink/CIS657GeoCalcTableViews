@@ -8,11 +8,14 @@
 
 import UIKit
 
-protocol SettingsViewControllerDelegate {
+protocol SettingsViewControllerDelegate: NSObjectProtocol {
     func settingsChanged(distanceUnits: String, bearingUnits: String)
 }
 
 class SettingViewController: UIViewController {
+    
+    //claim protocol
+    weak var delegate: SettingsViewControllerDelegate?
     
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var bearingLabel: UILabel!
@@ -27,9 +30,25 @@ class SettingViewController: UIViewController {
     
     @IBOutlet weak var picker: UIPickerView!
     
+    //cancel buttom action
     @IBAction func cancelPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    //save buttom action
+    @IBAction func savePressed(_ sender: Any) {
+        if delegate != nil {
+            delegate?.settingsChanged(distanceUnits: distanceLabel.text!, bearingUnits: bearingLabel.text!)
+        }
+    }
+    
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if(segue.identifier == "SettingToMain"){
+//            let receiverVC = segue.destination as! ViewController
+//            receiverVC.setting["distance"] = distanceLabel.text
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
