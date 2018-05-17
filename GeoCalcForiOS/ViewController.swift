@@ -53,20 +53,23 @@ class ViewController: UIViewController {
         distanceLabel.text = "Distance: " + String(format: "%.2f", distanceInMeters / 1000)
         
         bearingLabel.text = "Bearing: " + String(format: "%.2f", RadiansToDegrees(radians: Double(getBearing(fromLoc: p2, toLoc: p1))))
+        
+        
     }
     
     @IBAction func clearPressed(_ sender: Any) {
+        
         latitudeP1.text = ""
         latitudeP2.text = ""
         longitudeP1.text = ""
         longitudeP2.text = ""
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let detectTouch = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-        self.view.addGestureRecognizer(detectTouch)
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,16 +77,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func dismissKeyboard() {
-        self.view.endEditing(true)
-    }
-    
     func d2r(degrees : Double) -> Double {
-        return degrees * Double.pi / 180.0
+        return degrees * M_PI / 180.0
     }
     
     func RadiansToDegrees(radians : Double) -> Double {
-        return radians * 180.0 / Double.pi
+        return radians * 180.0 / M_PI
     }
     
     func getBearing(fromLoc : CLLocation, toLoc : CLLocation) -> CGFloat {
@@ -93,8 +92,8 @@ class ViewController: UIViewController {
         let tLat = d2r(degrees: toLoc.coordinate.latitude)
         let tLng = d2r(degrees: toLoc.coordinate.longitude)
         
-        let a = CGFloat(sin(fLng-tLng)*cos(tLat));
-        let b = CGFloat(cos(fLat)*sin(tLat)-sin(fLat)*cos(tLat)*cos(fLng-tLng))
+        var a = CGFloat(sin(fLng-tLng)*cos(tLat));
+        var b = CGFloat(cos(fLat)*sin(tLat)-sin(fLat)*cos(tLat)*cos(fLng-tLng))
         
         return atan2(a,b)
     }
