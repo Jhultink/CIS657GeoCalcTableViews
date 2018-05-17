@@ -56,14 +56,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XU-t1-NxD">
-                                <rect key="frame" x="16" y="149" width="162" height="21"/>
+                                <rect key="frame" x="16" y="149" width="338" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bearing: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOj-MJ-ssd">
-                                <rect key="frame" x="16" y="178" width="176" height="21"/>
+                                <rect key="frame" x="16" y="178" width="338" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -99,12 +99,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="-887"/>
+            <point key="canvasLocation" x="-1102" y="-878"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="24d-mo-bqa">
             <objects>
-                <viewController id="5WS-50-XVC" customClass="SettingViewController" customModule="GeoCalcForiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5WS-50-XVC" customClass="SettingViewController" customModule="GeoCalcForiOS" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUZ-Oa-52L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,6 +149,11 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="9sc-nY-f04">
                             <connections>
                                 <action selector="cancelPressed:" destination="5WS-50-XVC" id="kfq-Jn-qZr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="4dd-rp-Gm8">
+                            <connections>
+                                <action selector="savedPressed:" destination="5WS-50-XVC" id="awU-fw-YA4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
