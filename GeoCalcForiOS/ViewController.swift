@@ -84,7 +84,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         print(distanceInMeters)
         
         self.distanceInKilometers = (distanceInMeters / 1000)
-        self.bearingInDegrees = RadiansToDegrees(radians: Double(getBearing(fromLoc: p2, toLoc: p1)))
+        self.bearingInDegrees = getBearing(fromLoc: p1, toLoc: p2)
     
         redrawLabels()
     }
@@ -105,6 +105,9 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
             recalculatedDist *= 0.621371
         }
         
+        recalculatedDist = Double(round(100*recalculatedDist)/100)
+        recalculatedBearing = Double(round(100*recalculatedBearing)/100)
+        
         distanceLabel.text = "Distance: " + String(format: "%.2f", recalculatedDist) + " " + distanceUnit
         bearingLabel.text = "Bearing: " + String(format: "%.2f", recalculatedBearing) + " " + bearingUnit
     }
@@ -121,17 +124,31 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         return radians * 180.0 / Double.pi
     }
     
-    func getBearing(fromLoc : CLLocation, toLoc : CLLocation) -> CGFloat {
+    func getBearing(fromLoc : CLLocation, toLoc : CLLocation) -> Double {
         
-        let fLat = d2r(degrees: fromLoc.coordinate.latitude)
-        let fLng = d2r(degrees: fromLoc.coordinate.longitude)
-        let tLat = d2r(degrees: toLoc.coordinate.latitude)
-        let tLng = d2r(degrees: toLoc.coordinate.longitude)
+        let lat1 = d2r(degrees: fromLoc.coordinate.latitude)
+        let lon1 = d2r(degrees: fromLoc.coordinate.longitude)
+        let lat2 = d2r(degrees: toLoc.coordinate.latitude)
+        let lon2 = d2r(degrees: toLoc.coordinate.longitude)
         
-        let a = CGFloat(sin(fLng-tLng)*cos(tLat));
-        let b = CGFloat(cos(fLat)*sin(tLat)-sin(fLat)*cos(tLat)*cos(fLng-tLng))
+        //let fLat = d2r(degrees: fromLoc.coordinate.latitude)
+        //let fLng = d2r(degrees: fromLoc.coordinate.longitude)
+        //let tLat = d2r(degrees: toLoc.coordinate.latitude)
+        //let tLng = d2r(degrees: toLoc.coordinate.longitude)
         
-        return atan2(a,b)
+        let longDiff = lon2-lon1
+        let y = sin(longDiff)*cos(lat2)
+        let x = cos(lat1)*sin(lat2) - sin(lat1)*cos(lat2)*cos(longDiff)
+        return RadiansToDegrees(radians: Double(atan2(y,x)))
+
+
+        //let a = CGFloat(sin(fLng-tLng)*cos(tLat));
+        //let b = CGFloat(cos(fLat)*sin(tLat)-sin(fLat)*cos(tLat)*cos(fLng-tLng))
+
+        
+        
+        //return (360 - ((bearing + 360) % 360))
+        //return RadiansToDegrees(radians: Double(atan2(a,b)))
     }
     
     func settingsChanged(distanceUnits: String, bearingUnits: String) {
