@@ -47,6 +47,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         
         let detectTouch = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         self.view.addGestureRecognizer(detectTouch)
+        
+        self.view.backgroundColor = BACKGROUND_COLOR
     }
 
     override func didReceiveMemoryWarning() {
