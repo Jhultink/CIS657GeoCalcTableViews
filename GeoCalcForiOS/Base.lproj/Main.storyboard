@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-eN-xqj">
-                                <rect key="frame" x="20" y="20" width="335" height="68"/>
+                                <rect key="frame" x="20" y="36" width="335" height="68"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-zQ-rdR">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -66,33 +66,33 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-FV-m6c" customClass="GeoCalcButton" customModule="GeoCalcForiOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="96" width="125" height="30"/>
+                                <rect key="frame" x="16" y="112" width="125" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQQ-Mm-onf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-r6-hgG" customClass="GeoCalcButton" customModule="GeoCalcForiOS" customModuleProvider="target">
-                                <rect key="frame" x="229" y="96" width="125" height="30"/>
+                                <rect key="frame" x="234" y="112" width="125" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXS-bx-gAK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XU-t1-NxD" customClass="GeoCalcLabel" customModule="GeoCalcForiOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="134" width="76" height="20.5"/>
+                                <rect key="frame" x="16" y="150" width="76" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOj-MJ-ssd" customClass="GeoCalcLabel" customModule="GeoCalcForiOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="162.5" width="68" height="20.5"/>
+                                <rect key="frame" x="16" y="178.5" width="68" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQT-Y1-q61" customClass="GeoCalcButton" customModule="GeoCalcForiOS" customModuleProvider="target">
-                                <rect key="frame" x="159" y="617" width="57" height="30"/>
+                                <rect key="frame" x="159" y="621" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="SnB-JS-lYt" kind="show" id="S44-TK-eM2"/>
@@ -110,12 +110,12 @@
                             <constraint firstItem="lmQ-r6-hgG" firstAttribute="top" secondItem="1nr-ki-i5f" secondAttribute="bottom" constant="8" id="Svc-Bm-N1p"/>
                             <constraint firstItem="lmQ-r6-hgG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="U4l-uE-VvM"/>
                             <constraint firstItem="AjW-FV-m6c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="ZcZ-kv-ZDs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lmQ-r6-hgG" secondAttribute="trailing" constant="21" id="e2T-ej-jg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lmQ-r6-hgG" secondAttribute="trailing" constant="16" id="e2T-ej-jg5"/>
                             <constraint firstItem="EOj-MJ-ssd" firstAttribute="top" secondItem="5XU-t1-NxD" secondAttribute="bottom" constant="8" symbolic="YES" id="hXN-6Z-NpY"/>
                             <constraint firstAttribute="trailing" secondItem="bUU-eN-xqj" secondAttribute="trailing" constant="20" symbolic="YES" id="i5T-c8-2cr"/>
                             <constraint firstItem="EOj-MJ-ssd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nX4-fP-P5X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bUU-eN-xqj" secondAttribute="bottom" constant="-68" id="xAM-SE-J03"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQT-Y1-q61" secondAttribute="bottom" constant="20" id="yeZ-L6-qfq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bUU-eN-xqj" secondAttribute="top" constant="-16" id="xAM-SE-J03"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQT-Y1-q61" secondAttribute="bottom" constant="16" id="yeZ-L6-qfq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -189,8 +189,8 @@
                                     <constraint firstAttribute="trailing" secondItem="nEh-z9-jTi" secondAttribute="trailing" id="e7O-vt-C4F"/>
                                 </constraints>
                             </stackView>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-Hl-1Wk">
-                                <rect key="frame" x="0.0" y="548" width="375" height="119"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-Hl-1Wk">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -198,10 +198,9 @@
                             <constraint firstAttribute="trailing" secondItem="gSi-1k-QAH" secondAttribute="trailing" constant="20" symbolic="YES" id="HaH-lt-7CC"/>
                             <constraint firstItem="gSi-1k-QAH" firstAttribute="leading" secondItem="uUZ-Oa-52L" secondAttribute="leading" constant="20" symbolic="YES" id="KEF-DX-eMJ"/>
                             <constraint firstItem="gku-9H-cqG" firstAttribute="top" secondItem="gSi-1k-QAH" secondAttribute="bottom" constant="-65" id="LLt-ue-uuq"/>
-                            <constraint firstItem="kEj-Hl-1Wk" firstAttribute="width" secondItem="uUZ-Oa-52L" secondAttribute="width" multiplier="1:1" id="MKh-29-AMf"/>
-                            <constraint firstItem="gku-9H-cqG" firstAttribute="bottom" secondItem="kEj-Hl-1Wk" secondAttribute="bottom" id="fP1-zn-n9M"/>
+                            <constraint firstItem="gku-9H-cqG" firstAttribute="trailing" secondItem="kEj-Hl-1Wk" secondAttribute="trailing" id="RM8-p2-Laf"/>
+                            <constraint firstItem="kEj-Hl-1Wk" firstAttribute="bottom" secondItem="gku-9H-cqG" secondAttribute="bottom" id="mz0-Sw-r62"/>
                             <constraint firstItem="kEj-Hl-1Wk" firstAttribute="width" secondItem="uUZ-Oa-52L" secondAttribute="width" id="qPU-Az-GNa"/>
-                            <constraint firstItem="kEj-Hl-1Wk" firstAttribute="leading" secondItem="gku-9H-cqG" secondAttribute="leading" id="vcR-Vw-tmP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gku-9H-cqG"/>
                     </view>
