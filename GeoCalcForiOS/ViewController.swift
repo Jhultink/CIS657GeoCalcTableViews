@@ -25,6 +25,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     var distanceInKilometers:Double?
     var bearingInDegrees:Double?
     
+    var entries : [LocationLookup] = []
+    
     @IBAction func calculatePressed(_ sender: Any) {
         calculateDistanceAndBearing()
     }
@@ -78,6 +80,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
             
             return;
         }
+        
+        entries.append(LocationLookup(origLat: latP1Dbl, origLng: lonP1Dbl, destLat: latP2Dbl, destLng: lonP2Dbl, timestamp: Date()))
         
         let p1 = CLLocation(latitude: latP1Dbl, longitude: lonP1Dbl)
         let p2 = CLLocation(latitude: latP2Dbl, longitude: lonP2Dbl)
@@ -161,8 +165,12 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let nav = segue.destination as? UINavigationController, let dest = nav.topViewController as? SettingViewController {
+        if let dest = segue.destination as? SettingViewController {
             dest.delegate = self
+        }
+        
+        if let dest = segue.destination as? HistoryTableViewController {
+            dest.entries = self.entries
         }
     }
 }

@@ -10,6 +10,8 @@
 		592CBC5C20B4F38D00D84F7B /* GeoCalcTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CBC5B20B4F38D00D84F7B /* GeoCalcTextField.swift */; };
 		592CBC5E20B4F85000D84F7B /* GeoCalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CBC5D20B4F85000D84F7B /* GeoCalcLabel.swift */; };
 		592CBC6020B4F8C700D84F7B /* GeoCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CBC5F20B4F8C700D84F7B /* GeoCalcButton.swift */; };
+		59920B4220BE09D8007C72D2 /* LocationLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59920B4120BE09D8007C72D2 /* LocationLookup.swift */; };
+		59920B4420BE0CE1007C72D2 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59920B4320BE0CE1007C72D2 /* HistoryTableViewController.swift */; };
 		599802A020ABB56600C92630 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5998029F20ABB56600C92630 /* SettingViewController.swift */; };
 		599802A220ABBEB700C92630 /* BearingPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599802A120ABBEB700C92630 /* BearingPickerView.swift */; };
 		599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599C46C120AB931D00B03111 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		592CBC5B20B4F38D00D84F7B /* GeoCalcTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcTextField.swift; sourceTree = "<group>"; };
 		592CBC5D20B4F85000D84F7B /* GeoCalcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcLabel.swift; sourceTree = "<group>"; };
 		592CBC5F20B4F8C700D84F7B /* GeoCalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCalcButton.swift; sourceTree = "<group>"; };
+		59920B4120BE09D8007C72D2 /* LocationLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLookup.swift; sourceTree = "<group>"; };
+		59920B4320BE0CE1007C72D2 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		5998029F20ABB56600C92630 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		599802A120ABBEB700C92630 /* BearingPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearingPickerView.swift; sourceTree = "<group>"; };
 		599C46BE20AB931D00B03111 /* GeoCalcForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCalcForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59920B4020BE099E007C72D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59920B4120BE09D8007C72D2 /* LocationLookup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		599C46B520AB931D00B03111 = {
 			isa = PBXGroup;
 			children = (
@@ -110,11 +122,13 @@
 		599C46C020AB931D00B03111 /* GeoCalcForiOS */ = {
 			isa = PBXGroup;
 			children = (
+				59920B4020BE099E007C72D2 /* Models */,
 				599C46C120AB931D00B03111 /* AppDelegate.swift */,
 				599C46C320AB931D00B03111 /* ViewController.swift */,
 				599C46EF20AB99D500B03111 /* DecimalMinusTextField.swift */,
 				5998029F20ABB56600C92630 /* SettingViewController.swift */,
 				599C46C520AB931D00B03111 /* Main.storyboard */,
+				59920B4320BE0CE1007C72D2 /* HistoryTableViewController.swift */,
 				599C46C820AB932000B03111 /* Assets.xcassets */,
 				599C46CA20AB932000B03111 /* LaunchScreen.storyboard */,
 				599C46CD20AB932000B03111 /* Info.plist */,
@@ -278,9 +292,11 @@
 				599C46F020AB99D500B03111 /* DecimalMinusTextField.swift in Sources */,
 				599C46C420AB931D00B03111 /* ViewController.swift in Sources */,
 				592CBC5C20B4F38D00D84F7B /* GeoCalcTextField.swift in Sources */,
+				59920B4420BE0CE1007C72D2 /* HistoryTableViewController.swift in Sources */,
 				599C46C220AB931D00B03111 /* AppDelegate.swift in Sources */,
 				599802A220ABBEB700C92630 /* BearingPickerView.swift in Sources */,
 				592CBC5E20B4F85000D84F7B /* GeoCalcLabel.swift in Sources */,
+				59920B4220BE09D8007C72D2 /* LocationLookup.swift in Sources */,
 				599802A020ABB56600C92630 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

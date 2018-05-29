@@ -33,14 +33,14 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
     
     @IBAction func cancelPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func savedPressed(_ sender: Any) {
         if let d = self.delegate {
             d.settingsChanged(distanceUnits: self.selectedDistance!, bearingUnits: self.selectedBearing!)
         }
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
