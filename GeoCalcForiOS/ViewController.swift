@@ -171,7 +171,20 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         
         if let dest = segue.destination as? HistoryTableViewController {
             dest.entries = self.entries
+            dest.historyDelegate = self
         }
+    }
+}
+
+extension ViewController : HistoryTableViewControllerDelegate {
+    func selectEntry(entry: LocationLookup) {
+        latitudeP1.text = String(entry.origLat)
+        latitudeP2.text = String(entry.destLat)
+        longitudeP1.text = String(entry.origLng)
+        longitudeP2.text = String(entry.destLng)
+        
+        self.calculateDistanceAndBearing()
+
     }
 }
 
